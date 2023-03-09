@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" />
+  <title>Registration Form</title>
+  <h1 id="title" class="title">Developer Questionaire</h1>
+</head>
+
+<body>
+  <form id="survey-form" method="post" action="/submission.html">
+    <label id="name-label" for="name">Name:
+      <input required id="name" type="text" placeholder="Enter your name here" />
+    </label>
+
+    <br />
+
+    <label id="email-label" for="email">Email:
+      <input required id="email" type="email" placeholder="Enter your email here" />
+    </label>
+
+    <br />
+
+    <label id="number-label" for="number">Age: 
+      <input id="number" type="number" min="0" max="120" placeholder="" />
+    </label>
+
+    <br />
+
+    <div class="surveyTitle">Choose your experience level</div>
+    <select id="dropdown">
+      <option>Entry Level</option>
+      <option>Associate</option>
+      <option>Mid Level</option>
+      <option>Senior Level</option>
+      <option>Director</option>
+      <option>Executive</option>
+      <option>Other</option>
+    </select>
+    <br />
+
+    <div class="surveyTitle">Which languages do you have experience with?</div>
+    <label><input value="1" type="checkbox" /> C</label>
+    <label><input value="2" type="checkbox" /> C++</label>
+    <label><input value="3" type="checkbox" /> C#</label>
+    <label><input value="4" type="checkbox" /> Java</label>
+    <label><input value="5" type="checkbox" /> Javascript</label>
+    <label><input value="6" type="checkbox" /> HTML</label>
+    <label><input value="7" type="checkbox" /> CSS</label>
+    <label><input value="8" type="checkbox" /> Python</label>
+    <label><input value="8" type="checkbox" /> SQL</label>
+
+    <br />
+
+    <div class="textAreaTitle">Tell me about your favorite coding project</div>
+    <textarea rows="5"></textarea>
+    <br />
+
+    <div class="surveyTitle">Do you prefer Front-End or Back-End Development?</div>
+    <label for="radio1"><input id="radio1" type="radio" name="radio" class="inline" value="frontEnd" /> Front-End</label>
+    <label for="radio2"><input id="radio2" type="radio" name="radio" class="inline" value="backEnd" /> Back-End</label>
+
+    <br />
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+
+</html>

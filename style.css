@@ -1,0 +1,96 @@
+/* https://colors.artyclick.com/color-names-dictionary/color-names/dark-blue-grey-color/ */
+
+#title{
+  color: rgb(162, 227, 229);
+  font-size: 40px;
+}
+
+#description{
+  color: white;
+  -webkit-text-fill-color: darkgray; 
+  -webkit-text-stroke-width: .5px;
+  font-size: 40px;
+}
+
+html{
+  /* background-color: #1E3A4C;*/
+   background: linear-gradient(90deg, #1E3A4C, #1E3A4C);
+   height: 90vh;
+   padding-top: 5vh;
+}
+
+*{
+  font-family: sans-serif;
+}
+
+body{
+  /* margin-top: -10%; */
+  /* background: linear-gradient(#1E3A4C, #30363F);
+   */
+  background: linear-gradient(#1E3A4C 0%, #142733 50%, #1E3A4C 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+  
+  p{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  #survey-form{
+    border-radius: 15px;
+    background-color: #67879B;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    max-width: 700px;
+  }
+  
+  input{
+    border-radius: 5px;
+    color: black;
+  }
+
+  #survey-form > select{
+    width: 150px;
+  }
+  
+  .surveyTitle{
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  
+  .textAreaTitle{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #submit{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    border-radius: 5px;
+    height: 2rem;
+  }
+  
+
+
+  @media (max-width: 1000px){
+
+    #survey-form{
+      /* background-color: black; */
+      max-width: 90%;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(9%, 30%);
+    }
+  }
